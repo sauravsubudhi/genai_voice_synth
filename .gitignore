@@ -1,0 +1,8 @@
+# Ignore log files
+*.log
+
+# Ignore build directories
+/uploads/2min_output_clip.mp4
+
+# Ignore a specific file
+secret.txt
