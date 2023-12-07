@@ -1,7 +1,7 @@
 import cv2
 from skimage.metrics import structural_similarity as ssim
 from concurrent.futures import ThreadPoolExecutor
-import json  # Import the json module
+import json
 
 def calculate_ssim(frame1, frame2):
     gray_frame1 = cv2.cvtColor(frame1, cv2.COLOR_BGR2GRAY)
@@ -65,4 +65,3 @@ def detect_slide_durations(video_path, threshold=0.95, resize_factor=0.5, skip_f
 # Example usage
 #video_path = '2min_output_clip.mp4'
 # result_json = detect_slide_durations(video_path)
-
